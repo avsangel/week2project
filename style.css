@@ -1,6 +1,9 @@
 h1 {
   text-align: center;
   color: teal;
+  font-size: 36px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 footer {
@@ -10,8 +13,44 @@ footer {
 .container {
   max-width: 600px;
   margin: 0 auto;
+  background-color: aliceblue;
+  padding: 30px;
+  border-radius: 10px;
 }
 
 body {
-  background-color: cadetblue;
+  background-color: burlywood;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-bottom: 1px dashed grey;
+}
+
+.time {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.time small {
+  font-size: 18px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+h2 {
+  margin: 0 0 10px;
+}
+
+.date {
+  opacity: 0.7;
 }
