@@ -29,3 +29,13 @@ setInterval(function () {
     `h:mm:ss`
   )} <small> ${brazilTime.format("A")} </small>`;
 }, 1000);
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = "hi";
+}
+
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
